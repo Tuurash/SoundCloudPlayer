@@ -24,15 +24,31 @@ genres: input, bpm: { from: 120 }
 SoundCloudApi.renderTracks=function(){
 
 	var card=document.createElement('div');
-		card.ClassList.add("card");
+		card.classList.add("card");
 
-	var card_image=document.createElement('div');
-		card_image.ClassList.add("card");
-	var img=document.createElement('img');
-		img.ClassList.add("img");
+	var CardImage=document.createElement('div');
+		CardImage.classList.add("card_image");
 
-		var SearchResults=document.querySelector('.search-results');
-		SearchResults.appendChild(card);
+	var Img=document.createElement('img');
+		Img.classList.add("img");
+		Img.src="https://i.redd.it/b3esnz5ra34y.jpg";
+
+		CardImage.appendChild(Img);
+
+	var CardTitle=document.createElement('div');
+		CardTitle.classList.add("card_title");
+
+	var P=document.createElement('p');
+		P.classList.add("p");
+		P.innerHTML='<a href="https://soundcloud.com/barsuk-records/rilo-kiley-science-vs-romance" target="_blank">Wow';
+
+	CardTitle.appendChild(P);
+
+	card.appendChild(CardImage);
+	card.appendChild(CardTitle);
+	
+	var SearchResults=document.querySelector('.search-results');
+	SearchResults.appendChild(card);
 		
 }
 
