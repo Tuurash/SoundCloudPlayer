@@ -1,0 +1,162 @@
+/* CURRENTLY IN: styles/main.css */
+html, body {
+	height: 100%;
+	width: 100%;
+	min-height: 100%;
+}
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 04s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+  
+  filter:blur(2px);
+  transition: 2s;	  
+}
+.card:hover:after{
+
+	content: attr(data-hover);
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: -113px;
+  	height: 50px;
+  	
+  	color: white;
+  	text-align: center;
+
+	  
+  }
+
+
+
+/*
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+*/
+
+#soundcloud-player .col {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+#soundcloud-player .col-left {
+	width: 20%;
+	height: 100%;
+	background-color: #292929;
+	overflow: auto;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	min-width: 200px;
+	z-index: 1;
+}
+
+#soundcloud-player .col-right {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	box-sizing: border-box;
+	padding-left: 20%;
+}
+
+#soundcloud-player .main {
+	box-sizing: border-box;
+	padding: 30px;
+	margin: 30px;
+}
+
+#soundcloud-player .input {
+	width: 100%;
+}
+
+#soundcloud-player .input-search {
+	width: 100%;
+	display: block;
+}
+
+#soundcloud-player .search.icon {
+	pointer-events: initial;
+	cursor: pointer;
+}
+
+#soundcloud-player .search-results {
+	justify-content: center;
+    margin-top: 30px;
+}
