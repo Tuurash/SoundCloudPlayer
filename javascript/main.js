@@ -10,6 +10,7 @@ SoundCloudApi.init=function(){
 });
 
 }
+SoundCloudApi.init();
 
 SoundCloudApi.getTracks=function(input){
 
@@ -18,10 +19,20 @@ SC.get('/tracks', {
 genres: input, bpm: { from: 120 }
 }).then(function(tracks) {
   console.log(tracks);
+  SoundCloudApi.renderTracks(tracks);
 });
 }
 
+
+SoundCloudApi.getTracks('rock');
+
 SoundCloudApi.renderTracks=function(){
+
+
+	tracks.forEach(function(track){
+
+	console.log(track.artwork_url);
+	//vul hoise kothaw
 
 	var card=document.createElement('div');
 		card.classList.add("card");
@@ -31,7 +42,7 @@ SoundCloudApi.renderTracks=function(){
 
 	var Img=document.createElement('img');
 		Img.classList.add("img");
-		Img.src="https://i.redd.it/b3esnz5ra34y.jpg";
+		Img.src=track.artwork_url;
 
 		CardImage.appendChild(Img);
 
@@ -49,10 +60,12 @@ SoundCloudApi.renderTracks=function(){
 	
 	var SearchResults=document.querySelector('.search-results');
 	SearchResults.appendChild(card);
+
+	});
+
+	
 		
 }
 
 
-SoundCloudApi.init();
-SoundCloudApi.getTracks('rock');
-SoundCloudApi.renderTracks();
+
