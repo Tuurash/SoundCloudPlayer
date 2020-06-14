@@ -24,7 +24,7 @@ genres: input, bpm: { from: 120 }
 }
 
 
-SoundCloudApi.getTracks('rock');
+SoundCloudApi.getTracks('Metal');
 
 SoundCloudApi.renderTracks=function(tracks){
 
@@ -57,7 +57,7 @@ SoundCloudApi.renderTracks=function(tracks){
 	card.appendChild(CardImage);
 	card.appendChild(CardTitle);
 	
-	var SearchResults=document.querySelector('.search-results');
+	var SearchResults=document.querySelector('.cards-list');
 	SearchResults.appendChild(card);
 
 
