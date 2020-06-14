@@ -71,7 +71,12 @@ SoundCloudApi.renderTracks=function(tracks){
 SC.oEmbed('https://soundcloud.com/forss/flickermood', {
   auto_play: true
 }).then(function(embed){
+
   console.log('oEmbed response: ', embed);
+
+  var sidebar=document.querySelector('.js-playlist');
+  sidebar.innerHTML=embed.html;
+
 });
 
 
