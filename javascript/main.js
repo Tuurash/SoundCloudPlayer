@@ -26,14 +26,13 @@ genres: input, bpm: { from: 120 }
 
 SoundCloudApi.getTracks('rock');
 
-SoundCloudApi.renderTracks=function(){
+SoundCloudApi.renderTracks=function(tracks){
 
 
 	tracks.forEach(function(track){
 
 	console.log(track.artwork_url);
 	//vul hoise kothaw
-
 	var card=document.createElement('div');
 		card.classList.add("card");
 
@@ -42,7 +41,7 @@ SoundCloudApi.renderTracks=function(){
 
 	var Img=document.createElement('img');
 		Img.classList.add("img");
-		Img.src=track.artwork_url;
+		Img.src=track.artwork_url || 'https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif';
 
 		CardImage.appendChild(Img);
 
@@ -51,7 +50,7 @@ SoundCloudApi.renderTracks=function(){
 
 	var P=document.createElement('p');
 		P.classList.add("p");
-		P.innerHTML='<a href="https://soundcloud.com/barsuk-records/rilo-kiley-science-vs-romance" target="_blank">Wow';
+		P.innerHTML='<a href="'+track.permalink_url+'">'+track.title+'</a>';
 
 	CardTitle.appendChild(P);
 
@@ -61,11 +60,18 @@ SoundCloudApi.renderTracks=function(){
 	var SearchResults=document.querySelector('.search-results');
 	SearchResults.appendChild(card);
 
+
 	});
 
 	
 		
 }
 
+
+SC.oEmbed('https://soundcloud.com/forss/flickermood', {
+  auto_play: true
+}).then(function(embed){
+  console.log('oEmbed response: ', embed);
+});
 
 
