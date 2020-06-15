@@ -105,6 +105,24 @@ SoundCloudApi.getEmbed=function(inputURL){
 
 	  sidebar.insertBefore(box, sidebar.firstChild);
 
+	  //save playlist for later
+
+	  localStorage.setItem( "key", sidebar.innerHTML);
+
 	});
 
 }
+
+
+
+
+SoundCloudApi.loadPlaylist= function(){
+
+	var sidebar=document.querySelector('.js-playlist');
+	sidebar.innerHTML= localStorage.getItem("key");
+}
+
+document.querySelector('.loadBtn').addEventListener('click',function(){
+
+	SoundCloudApi.loadPlaylist();
+});
