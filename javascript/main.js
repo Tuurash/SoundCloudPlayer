@@ -1,5 +1,33 @@
-
 var SoundCloudApi={};
+
+
+//get from search
+
+function getinput()
+{
+
+	var text=document.getElementById("inputtext").value;
+	console.log(text);
+
+
+
+	SoundCloudApi.init();
+	SoundCloudApi.getTracks(text);
+}; 
+
+document.getElementById("inputtext").addEventListener('keyup',
+	function(e)
+	{
+		if(e.which==13)
+		{
+			
+			getinput();
+			
+
+		}
+	});
+
+
 
 SoundCloudApi.init=function(){
 
@@ -10,13 +38,13 @@ SoundCloudApi.init=function(){
 });
 
 }
-SoundCloudApi.init();
+
 
 SoundCloudApi.getTracks=function(input){
 
 	// find all tracks with the genre 'punk' that have a tempo greater than 120 bpm.
 SC.get('/tracks', {
-genres: input, bpm: { from: 120 }
+q: input, bpm: { from: 120 }
 }).then(function(tracks) {
   console.log(tracks);
   SoundCloudApi.renderTracks(tracks);
@@ -24,7 +52,7 @@ genres: input, bpm: { from: 120 }
 }
 
 
-SoundCloudApi.getTracks('Metal');
+//SoundCloudApi.getTracks('Metal');
 
 SoundCloudApi.renderTracks=function(tracks){
 
