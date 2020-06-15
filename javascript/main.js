@@ -45,6 +45,16 @@ SoundCloudApi.renderTracks=function(tracks){
 
 		CardImage.appendChild(Img);
 
+		//<div class="text">Hello World</div>
+	var CardText=document.createElement('div');
+		CardText.classList.add("card_text");
+
+	var H=document.createElement('h2');
+		H.classList.add("h2");
+		H.innerHTML='PLAY';
+
+	CardText.appendChild(H);
+
 	var CardTitle=document.createElement('div');
 		CardTitle.classList.add("card_title");
 
@@ -55,6 +65,7 @@ SoundCloudApi.renderTracks=function(tracks){
 	CardTitle.appendChild(P);
 
 	card.appendChild(CardImage);
+	card.appendChild(CardText);
 	card.appendChild(CardTitle);
 
 	card.addEventListener('click',function(){
