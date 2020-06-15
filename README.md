@@ -6,5 +6,5 @@ A music player using Soundcloud API with basic features
 -saved playlist  
 -skip
 # Screenshots  
-![](snaps/2s.PNG)
-![](snaps/1s.PNG)
+![](Snaps/2s.png)
+![](Snaps/1s.PNG)
