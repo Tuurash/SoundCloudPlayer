@@ -51,7 +51,7 @@ SoundCloudApi.renderTracks=function(tracks){
 
 	var H=document.createElement('h2');
 		H.classList.add("h2");
-		H.innerHTML='PLAY';
+		H.innerHTML='▶';
 
 	CardText.appendChild(H);
 
