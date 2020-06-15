@@ -4,5 +4,7 @@ A music player using Soundcloud API with basic features
 -play  
 -Add to queue  
 -saved playlist  
--skip  
+-skip
 # Screenshots  
+![](snaps/2s.PNG)
+![](snaps/1s.PNG)
