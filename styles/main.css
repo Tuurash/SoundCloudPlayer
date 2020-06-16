@@ -3,7 +3,7 @@ html body{
   margin: 0;
   padding: 0;
   
-  background-image: url(White.jpg);
+  background-color: #FFFFFF;
 }
 
 .cards-list {
@@ -118,7 +118,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 	height: 95%;
 
 
-	background-color: #f1f2f6;  
+	background-color: #E5E5E5;  
   margin: 16px;
   border-radius: 16px;
 	overflow: auto;
@@ -144,6 +144,13 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   font-family: sans-serif;
   font-weight: bold;
   font-size: 15px;
+
+
+}
+#soundcloud-player .col-left:hover{
+ 
+  background-color:#CED4DA;
+  transition: .7s;
 
 
 }
@@ -177,7 +184,16 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 	width: 50%;
 	display: block;
   border-radius: 10px;
-  border: 3px solid black;
+  border: 3px solid #E5E5E5;
+  background-color: #E5E5E5;
+}
+#soundcloud-player .input-search:hover {
+
+
+  
+  border: 3px solid #CED4DA;
+  background-color: #CED4DA;
+  transition: .7s;
 }
 
 #soundcloud-player .search.icon {
@@ -188,6 +204,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 #soundcloud-player .search-results {
 	justify-content: center;
     margin-top: 30px;
+
 }
 
 
