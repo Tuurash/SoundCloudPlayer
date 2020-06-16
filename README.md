@@ -8,4 +8,4 @@ A music player using Soundcloud API with basic features
 # Screenshots  
   selecting single track 
 ![](Snaps/b1.png)  searched tracks  
-![](Snaps/b2.PNG)
+![](Snaps/b2.png)
