@@ -6,7 +6,6 @@
 
 
 ### Features
-
 -Search  
 -play  
 -Add to queue  
