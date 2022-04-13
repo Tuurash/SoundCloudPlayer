@@ -1,11 +1,20 @@
-# SoundCloudPlayer
-A music player using Soundcloud API with basic features
+
+<h2 align="center">SoundCloudPlayer</h2>  
+<h5 align="center">
+  A music player using Soundcloud API with basic features
+</h5>
+
+
+### Features
+
 -Search  
 -play  
 -Add to queue  
 -saved playlist  
 -skip
-# Screenshots  
-  selecting single track 
-![](Snaps/b1.png)  searched tracks  
-![](Snaps/b2.png)
+# Snaps  
+<p align="center">
+  <img align="center" src="https://github.com/Tuurash/SoundCloudPlayer/blob/master/Snaps/b1.png" width="160" height="160" />
+  <img align="center" src="https://github.com/Tuurash/SoundCloudPlayer/blob/master/Snaps/b2.png" width="160" height="160" />
+</p>
+
