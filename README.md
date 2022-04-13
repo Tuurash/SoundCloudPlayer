@@ -14,7 +14,7 @@
 -skip
 # Snaps  
 <p align="center">
-  <img align="center" src="https://github.com/Tuurash/SoundCloudPlayer/blob/master/Snaps/b1.png" width="500" height="400" />
-  <img align="center" src="https://github.com/Tuurash/SoundCloudPlayer/blob/master/Snaps/b2.png" width="500" height="400" />
+  <img align="center" src="https://github.com/Tuurash/SoundCloudPlayer/blob/master/Snaps/b1.png" width="500" height="300" />
+  <img align="center" src="https://github.com/Tuurash/SoundCloudPlayer/blob/master/Snaps/b2.png" width="500" height="300" />
 </p>
 
