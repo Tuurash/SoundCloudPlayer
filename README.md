@@ -11,7 +11,7 @@
 -Add to queue  
 -saved playlist  
 -skip
-# Snaps  
+<h2 align="center">Snaps</h2>   
 <p align="center">
   <img align="center" src="https://github.com/Tuurash/SoundCloudPlayer/blob/master/Snaps/b1.png" width="500" height="300" />
   <img align="center" src="https://github.com/Tuurash/SoundCloudPlayer/blob/master/Snaps/b2.png" width="500" height="300" />
